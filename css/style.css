@@ -371,10 +371,7 @@ img {
   flex-basis: calc(100% / 3 -var(--portfolio-list-gap));
   margin-top: var(--portfolio-list-gap);
   margin-left: var(--portfolio-list-gap);
-} /*
-.portfolio-list .item * {
-  outline: 1px solid tomato;
-}*/
+}
 
 .portfolio-list .title {
   font-weight: 700;
