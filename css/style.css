@@ -105,7 +105,7 @@ img {
   letter-spacing: 0.03em;
 }
 .page-header {
-  background-color: var(--primary-bg-color: #ffffff);
+  background-color: var(--primary-bg-color);
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--border-line-color);
@@ -183,28 +183,31 @@ img {
 }
 
 /****** section hero ******/
-.hero {
-  background-color: var(--background-hf-color);
+.hero-section {
   text-align: center;
-  margin-bottom: 94px;
-  height: 600px;
-}
-.hero-accommodation {
+  padding-bottom: 280px;
   padding-top: 200px;
+  background-color: var(--background-hf-color);
 }
+
 .hero-title {
+  /*display: inline-block;*/
+  margin: auto;
   margin-top: 0;
+  margin-bottom: 30px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--primary-white-color);
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 /* button */
 .button {
   /*font-family: Roboto, sans-serif;*/
+  display: block;
+  margin: auto;
   font-family: inherit;
   font-size: 16px;
   text-align: center;
@@ -215,8 +218,9 @@ img {
   /* border: 1px solid transparent;*/
 }
 /* button in section Hero */
-.button.primary {
-  margin-top: 30px;
+.button.hero-button {
+  /* display: block;*/
+  text-align: center;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -226,15 +230,18 @@ img {
   min-width: 216px;
 }
 /* fiter (buttons) for page Portfolio*/
+
+.filter-button {
+  margin-bottom: 34px;
+}
+
 .button.second {
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   padding: 0;
-  /*padding: 6px, 22px;*/
   min-width: 73px;
-  /* border: 2px solid darkblue;*/
 }
 .button.second:hover,
 .button.second:focus {
@@ -249,7 +256,6 @@ img {
 }
 
 .section.no-padding {
-  padding-top: 0;
   padding-bottom: 0;
 }
 .section-title {
@@ -306,8 +312,13 @@ img {
   justify-content: space-between;
 }
 
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-list .title {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -315,8 +326,6 @@ img {
   text-align: center;
 }
 .team-list .description {
-  margin-top: 10px;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -393,19 +402,15 @@ img {
   padding-left: 24px;
 }
 /******footer******/
+
 .footer {
   background-color: var(--background-hf-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* логотип у футері*/
-.webf-logo {
-  color: var(--accent-text-color);
-}
-.studiof-logo {
-  color: var(--primary-white-color);
-}
-.logof {
+.logof.link {
+  display: block;
+  margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -413,7 +418,17 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* логотип у футері*/
+.webf-logo {
+  color: var(--accent-text-color);
+}
+.studiof-logo {
+  color: var(--primary-white-color);
+}
+
 .address-footer {
+  display: block;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -421,6 +436,8 @@ img {
   color: var(--primary-white-color);
 }
 .contacts-footer {
+  display: block;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
