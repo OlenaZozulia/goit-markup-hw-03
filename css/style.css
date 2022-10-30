@@ -310,6 +310,27 @@ img {
   letter-spacing: 0.03em;
 }
 
+.features-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--second-bg-color);
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url("../images/features-svg/antenna.svg");
+}
+.icon-clock::before {
+  background-image: url("../images/features-svg/clock.svg");
+}
+.icon-diagrama::before {
+  background-image: url("../images/features-svg/diagram.svg");
+}
+.icon-astronaut::before {
+  background-image: url("../images/features-svg/astronaut.svg");
+}
 /* work Чим ми займаємось
 .work .title {}*/
 .work-list {
