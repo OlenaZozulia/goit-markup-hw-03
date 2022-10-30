@@ -76,6 +76,7 @@ img {
   margin: -1px;
 }
 .container {
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -181,7 +182,13 @@ img {
 .link:focus {
   color: var(--accent-text-color);
 }
-
+/**
+.hero {
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-color: var(--background-hf-color);
+}**/
 /****** section hero ******/
 .hero-section {
   text-align: center;
@@ -189,9 +196,22 @@ img {
   padding-top: 200px;
   background-color: var(--background-hf-color);
 }
+.hero-section.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-image: url("../images/bgn/hero-bgn.jpg");*/
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/bgn/hero-bgn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*outline: 1px solid black;*/
+}
 
 .hero-title {
-  /*display: inline-block;*/
+  display: block;
   margin: auto;
   margin-top: 0;
   margin-bottom: 30px;
@@ -203,6 +223,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+
 /* button */
 .button {
   /*font-family: Roboto, sans-serif;*/
@@ -270,7 +291,7 @@ img {
   gap: 30px;
 }
 .features-list > .item {
-  width: 270px;
+  flex-basis: 270px;
 }
 
 .features-list .title {
@@ -296,7 +317,8 @@ img {
   gap: 30px;
 }
 .work-list > .item {
-  width: 370px;
+  /*width: 370px;*/
+  flex-basis: 370px;
 }
 
 /* team команда фон Наша Команда*/
